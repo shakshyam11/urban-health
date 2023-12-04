@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="urban.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 2000px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 5, 5, 0.1);
+        }
+
+        .photo {
+            flex: 1;
+            background-image: url('img/login.88f22564.png');
+            /* Replace with the actual image URL or path */
+            
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button {
+            
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .photo-mahanagar{
+            flex: 1;
+             
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+
+
+        }
+        input:focus{
+    border-color: blue;
+    border-width: 2px;
+    outline: none;
+}
+        input{
+            width: 500px;
+            height: 30px;
+            border-style: solid;
+            border-color: rgb(78, 204, 246);
+            border-width:3px;
+             
+
+        } 
+        label{
+        font-size: 25px;
+        color: rgb(78, 204, 246) ;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="photo">  </div>
+    <div class="login">
+        <div class="photo-mahanagar" > <img src="img/logo.83318bae.png" alt=""></div>
+        
+        <h2 style="font-size:30px; color: rgb(59, 199, 246); ">Welcome To
+            Urban Health Medical Information System</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input  type="text" id="username" placeholder="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input  type="password" id="password"  placeholder="Password" name="password" required>
+
+            <button  type="submit">Login<svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowForwardIosIcon"><path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path></svg></button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
